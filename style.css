@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  user-select: none;
+}
+
+.nav {
+  height: 10vh;
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.disc {
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+
+  animation: animate 0.3s linear infinite;
+}
+
+@keyframes animate {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.left {
+  width: 50%;
+}
+.right {
+  width: 50%;
+  /* background-color: #14ffe9; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px dotted black;
+}
+
+.nav a {
+  margin: 0 2%;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: larger;
+  color: rgb(0, 0, 0);
+}
+
+.main-course {
+  height: 60vh;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-shrink: inherit; */
+}
+
+.box {
+  width: 25%;
+  /* border: 2px solid black; */
+  box-shadow: 0px 0px 5px rgb(128, 107, 221);
+  border-radius: 10px;
+  height: 50vh;
+  transition: 0.3s ease-in-out;
+}
+
+.box:hover {
+  box-shadow: 0px 0px 20px rgb(86, 52, 240);
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 2px solid black;
+  color: rgb(255, 101, 46);
+  /* width: 100%; */
+  padding: 10px 0;
+}
+
+/* .check {
+ 
+} */
+
+input {
+  /* display: block; */
+  text-decoration: none;
+  font-style: normal;
+  list-style: none;
+  margin: 2%;
+  text-align: center;
+  font-size: larger;
+}
+
+/* label {
+  display: block;
+} */
+ul {
+  margin-top: 10%;
+}
+
+.check-div {
+  display: flex;
+  justify-content: center;
+  /* width: 100%; */
+  align-items: center;
+  margin: 10px 0;
+}
+
+.btn {
+  width: 200px;
+  height: 60px;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  /* display: inline-block; */
+  background-color: transparent;
+  color: rgb(255, 101, 46);
+  border: 2px solid rgb(255, 101, 46);
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: rgb(255, 101, 46);
+  color: white;
+}
+
+.section2 {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.typewriter {
+  text-transform: capitalize;
+  color: rgb(255, 101, 46);
+  padding-right: 4px;
+}
+
+.blink {
+  border-right: 2px solid black;
+  padding-right: 2px;
+}
+
+.nav a {
+  transition: 0.2s ease-in-out;
+}
+
+.nav a:hover {
+  color: rgb(255, 101, 46);
+}
+
+.h {
+  margin-top: 10px;
+}
+
+.order {
+  padding-top: 0;
+  border: none;
+  text-align: center;
+  text-transform: capitalize;
+}
